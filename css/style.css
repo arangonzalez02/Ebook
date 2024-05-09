@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: "Ubuntu", sans-serif;
@@ -15,107 +15,157 @@ body{
     font-weight: 300;
     font-style: normal;
 }
-  
+
 .ubuntu-regular {
     font-weight: 400;
     font-style: normal;
 }
-  
+
 .ubuntu-medium {
     font-weight: 500;
     font-style: normal;
 }
-  
+
 .ubuntu-bold {
     font-weight: 700;
     font-style: normal;
 }
-  
+
 .ubuntu-light-italic {
     font-weight: 300;
     font-style: italic;
 }
-  
+
 .ubuntu-regular-italic {
     font-weight: 400;
     font-style: italic;
 }
-  
+
 .ubuntu-medium-italic {
     font-weight: 500;
     font-style: italic;
 }
-  
+
 .ubuntu-bold-italic {
     font-weight: 700;
     font-style: italic;
 }
 
 /* Para ordenadores y portátiles */
-.col-1{width: 8.33%;}
-.col-2{width: 16.66%;}
-.col-3{width: 25%;}
-.col-4{width: 33.33%;}
-.col-5{width: 41.66%;}
-.col-6{width: 50%;}
-.col-7{width: 58.33%;}
-.col-8{width: 66.66%;}
-.col-9{width: 75%;}
-.col-10{width: 83.33%;}
-.col-11{width: 91.66%;}
-.col-12{width: 100%;}
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
 
 /* Para dispositivos Móviles */
-@media screen and (width<=768px){
-    [class*="col-"]{
-    width: 100%;}
+@media screen and (width<=768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
 
-    .row{
-    flex-direction: column;}
+    .row {
+        flex-direction: column;
+    }
 }
-  
-.row{
+
+.row {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.header{
+.header {
     height: 100vh;
-    background-color: #333333;
     flex-direction: column;
 }
 
-.ebook{
+.footer,
+.header {
+    background-color: #333333;
+}
+
+.footer {
+    height: 500px;
+}
+
+.ebook {
     margin-top: 100px;
 }
 
-.row-centrado{
+.row-centrado {
     margin: auto;
 }
 
-.row-izquierda{
+.row-izquierda {
     margin: auto;
 }
 
-.espacio-xy{
+.espacio-xy {
     padding: 100px;
 }
 
-.h1-header{
+.h1-header {
     font-size: 48px;
 }
 
-.texto-1{
+.texto-1 {
     font-size: 20px;
     opacity: 0.6;
 }
 
-.h1-header, .texto-1{
+.h1-header,
+.texto-1 {
     color: white;
 }
 
-.boton{
+.letrablanca{
+    color: white;
+}
+
+.boton {
     background-color: #3EAF63;
     padding: 20px 35px;
     text-transform: uppercase;
@@ -126,82 +176,145 @@ body{
     border: none;
 }
 
-.margen-top-200{
+.boton:hover {
+    cursor: pointer;
+    background-color: #3eaf646f;
+}
+
+.margen-top-200 {
     margin-top: 200px;
 }
 
-.margen-top-100{
+.margen-top-100 {
     margin-top: 100px;
 }
 
-.h2-negro{
+.h2-negro {
     font-size: 40px;
     line-height: 1;
     text-transform: capitalize;
 }
 
-.h3-negro{
+.h3-negro {
     font-size: 18px;
 }
 
-.texto-centrado{
+.texto-centrado {
     text-align: center;
 }
 
-.h3-negro{
+.h3-negro {
     line-height: 24px;
 }
 
-.texto-2{
+.texto-2 {
     font-size: 18px;
 }
 
 
-.texto-3{
+.texto-3 {
     font-size: 13px;
 }
 
-.texto-2, .texto-3{
+.texto-2,
+.texto-3 {
     color: #6d6c6c;
 }
 
-.h2-negro, .h3-negro{
+.h2-negro,
+.h3-negro {
     color: black;
 }
 
-.espacio-xy-90{
+.espacio-xy-90 {
     padding: 90px;
 }
 
-.margen-top-70{
+.margen-top-70 {
     margin-top: 70px;
 }
 
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-.material-icons.md-78 { font-size: 78px;
-                        color: #3EAF63; }
+.material-icons.md-18 {
+    font-size: 18px;
+}
 
-.color-gris{
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.md-78 {
+    font-size: 78px;
+    color: #3EAF63;
+}
+
+.color-gris {
     border: none;
     border: 0.3px solid rgb(203, 203, 203);
 }
 
-.espacio-xy-25{
+.espacio-xy-25 {
     padding: 25px;
 }
 
-.row-columna{
+.row-columna {
     flex-direction: column;
 }
 
-.efecto:hover{
-    transform: translate(0,-5px);
+.efecto:hover {
+    transform: translate(0, -5px);
 }
 
-.color-gris-menos{
+.color-gris-menos {
     background-color: #f1f1f1;
 }
 
+.caja-blanca {
+    background-color: white;
+    height: 450px;
+}
+
+.margen-xy-25,
+.precio {
+    margin: 25px;
+}
+
+.precio {
+    color: #333333;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.precio sup {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.precio-descripcion {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.texto-4,
+.precio-descripcion {
+    color: #aaa;
+}
+
+.margen-top-40 {
+    margin-top: 40px;
+}
+
+.verde{
+    color: #3EAF63;
+}
